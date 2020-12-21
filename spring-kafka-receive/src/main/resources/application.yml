@@ -1,1 +1,14 @@
-
+spring:
+  application:
+    name: Spring-Kafka-example
+  kafka:
+    topic:
+      test: v1.test
+    producer:
+      bootstrap-servers: localhost:9092
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: test
+      auto-offset-reset: latest
+server:
+  port: 8080
